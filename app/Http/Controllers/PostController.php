@@ -33,7 +33,7 @@ class PostController extends Controller
             "body"=> "required"
             ]);
             $post = Post::create($fields);
-            return ['post'=>$post];
+            return $post;
     }
 
     /**
@@ -41,7 +41,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        //
+        return $post;
     }
 
     /**
